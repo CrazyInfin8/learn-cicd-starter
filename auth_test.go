@@ -8,7 +8,7 @@ import (
 
 func TestGetAPIKey(t *testing.T) {
 	_, err := auth.GetAPIKey(nil)
-	if err != nil {
+	if err == nil {
 		t.Error("expected error, got nil")
 	}
 }
